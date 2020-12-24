@@ -19,6 +19,7 @@
     <module>zk-cloud-provide-payment8004</module>
     <module>zk-cloud-consumer-order80</module>
     <module>consul-cloud-provide-payment8006</module>
+    <module>cloud-consumer-feign-order80</module>
   </modules>
 
   <!-- FIXME change it to the project's website -->

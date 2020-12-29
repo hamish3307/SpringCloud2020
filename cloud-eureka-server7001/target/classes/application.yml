@@ -12,8 +12,10 @@ eureka:
     fetch-registry: false
     # 设置与eureka server交互的地址，检查服务和注册服务都需要依赖这个地址
     service-url:
-      # IP应该对应到7001的地址
-      defaultZone: http://eureka7002.com:7002/eureka/
+      # 集群版：IP应该对应到7002的地址
+      #defaultZone: http://eureka7002.com:7002/eureka/
+      # 单机版
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
     # 关闭自我保护机制，保证不可用服务被及时剔除
     enable-self-preservation: false

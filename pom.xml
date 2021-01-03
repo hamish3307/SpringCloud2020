@@ -23,7 +23,10 @@
     <module>cloud-provider-hystrix-payment8001</module>
     <module>cloud-consumer-feign-hystrix-order80</module>
     <module>cloud-common-hystrix-dashboard9001</module>
-      <module>cloud-common-gateway9901</module>
+    <module>cloud-common-gateway9901</module>
+    <module>cloud-config-center</module>
+    <module>cloud-config-client3355</module>
+    <module>cloud-config-client3366</module>
   </modules>
 
   <!-- FIXME change it to the project's website -->

@@ -1,4 +1,4 @@
-package com.hamish.springcloud.controller;
+package com.hamish.springcloud.listener;
 
 import com.hamish.springcloud.service.HystrixPaymentService;
 import lombok.extern.slf4j.Slf4j;

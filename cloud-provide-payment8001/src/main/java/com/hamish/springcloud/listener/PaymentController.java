@@ -1,4 +1,4 @@
-package com.hamish.springcloud.controller;
+package com.hamish.springcloud.listener;
 
 import com.api.common.entitys.ApiResponce;
 import com.api.common.entitys.Payment;
@@ -26,11 +26,11 @@ public class PaymentController {
     @Autowired
     private PaymentService paymentService;
 
-    @Autowired
-    private DiscoveryClient discoveryClient;
-
     @Value("${server.port}")
     private String serverPort;
+
+    @Autowired
+    private DiscoveryClient discoveryClient;
 
     @PostMapping("/create")
     public ApiResponce create(@RequestBody Payment payment) {
@@ -76,4 +76,4 @@ public class PaymentController {
         return "所选服务器：" + serverPort;
     }
 
-}
+ }
